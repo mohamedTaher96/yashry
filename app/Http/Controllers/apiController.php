@@ -12,11 +12,7 @@ use App\Favorite;
 use App\order_items ;
 use App\Rateing;
 
-use Mail;
-use File;
 use Hash;
-
-use function PHPSTORM_META\type;
 
 class apiController extends Controller
 {

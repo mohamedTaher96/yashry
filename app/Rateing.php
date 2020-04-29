@@ -12,7 +12,7 @@ class Rateing extends Model
     ];
     public function user()
     {
-        return $this->belongsTo('App\user'); 
+        return $this->belongsTo('App\User'); 
         
     }
 
