@@ -19,6 +19,6 @@ Route::get('/clear_cache', function() {
     echo "done";
 });
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/{path?}', function () {
+    require_once __DIR__.'/../public/index.html';
+});
