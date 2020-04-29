@@ -9,7 +9,7 @@ use App\User;
 use App\Menu;
 use App\Order;
 use App\Favorite;
-use App\order_items ;
+use App\Order_Items ;
 use App\Rateing;
 
 use Hash;
