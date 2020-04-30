@@ -25,7 +25,7 @@ class apiController extends Controller
         return["status"=>1,"menu"=>$menu];
     }
     public function home(){
-        $menu = Menu::take(7)->get();
+        $menu = Menu::take(8)->get();
         $rate = Rateing::with('user')->take(10)->get();
         return["status"=>1,"menu"=>$menu,"rate"=>$rate];
     }
@@ -41,7 +41,7 @@ class apiController extends Controller
         );
         foreach($request->order as $item)
         {
-            Order_Items::create(['menu_id'=>$item['id'],"order_id"=>$order->id]);
+            Order_Items::create(['menu_id'=>$item['id'],"order_id"=>$order->id,'qty'=>$item['qty']]);
         }
         $data = Order::where('id',$order->id)->with('order_items')->first();
         $data->date =  date("Y-m-d", strtotime(str_replace('-', '/', $data->created_at))); ;
