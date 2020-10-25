@@ -3,7 +3,14 @@
 a program that can price a cart of products
 
   - you can view the deployed app on the following link
-  "https://yashry.herokuapp.com/"
+ 
+    "https://yashery.herokuapp.com
+
+     - change your currency from navbar
+     - order somthing
+     - go to your cart link
+    - confirm yor bill
+    - now bill had stored in database
 
 ### Tech
 
@@ -21,9 +28,11 @@ To install it on your local machine
 
 ```sh
 $ php artisan serve
+$ php artisan key:generate
 ```
 4/visit localhost:8000 in the web browser to view the app
-5/I made a postman file to import to use test the REST API in the root folder yashery.postman_collection.json 
+
+    made a postman file to import to use test the REST API in the root folder yashery.postman_collection.json 
 
 ### Front end code
 
