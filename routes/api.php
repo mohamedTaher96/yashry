@@ -18,11 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/menu','apiController@menu');
-Route::get('/home','apiController@home');
-Route::post('/newOrder','apiController@new_order');
-Route::post('/search','apiController@search');
-Route::post('/login','apiController@login');
-Route::post('/register','apiController@register');
-
-
+Route::get('/products','apiController@Products');
+Route::post('/bill/create','apiController@billCreate');
+Route::post('/bill/store','apiController@billStore');
+Route::post('/bills','apiController@bills');
